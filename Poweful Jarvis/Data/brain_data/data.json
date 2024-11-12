@@ -1,0 +1,779 @@
+{
+    "intents": [
+
+        {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "internet"
+            ],
+            "responses": [
+                "Redirecting to Google..."
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day",
+                "Namaste",
+                "yo"
+            ],
+            "responses": [
+                "Hello",
+                "Good to see you again",
+                "Hi there, how can I help?",
+                "Hey there Sir, how can i help you today",
+                "Pleased to see you"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Get lost",
+                "Till next time",
+                "bbye"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "no answer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
+            ],
+            "context": [
+                ""
+            ]
+        },
+
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ],
+            "context": [
+                "jokes"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you",
+                "what are you"
+            ],
+            "responses": [
+                "I am Ted, a Deep-Learning chatbot"
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time",
+                "what is the date",
+                "date",
+                "time",
+                "tell me the date","day","what day is is today"
+            ],
+            "responses": [
+                "Date and Time"
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup","How you doing"
+            ],
+            "responses": [
+                "All good..What about you?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was made by Shanto Mollick."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+
+                "you are dumb",
+
+                "shut up",
+                "idiot"
+            ],
+            "responses": [
+                "Well that hurts :("
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing",
+                "what are you upto"
+            ],
+            "responses": [
+                "Talking to you, of course!"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "I know",
+                "ok",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!"
+            ]
+        },
+
+        {
+            "tag": "weather",
+            "patterns": [
+                "temperature",
+                "weather",
+                "how hot is it"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "shanto",
+            "patterns": [
+                "who is he",
+                "who is that",
+                "who is shanto",
+                "shanto mollick"
+            ],
+            "responses": [
+                "Head over to his any of his social profiles to find out! Linkedin: www.linkedin.com/in/karan-malik-3a39191a7 Github: https://github.com/Karan-Malik"
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contact developer",
+                "contact karan",
+                "contact programmer",
+                "contact creator"
+            ],
+            "responses": [
+                "You can contact my creator at his Linkedin profile : www.linkedin.com/in/karan-malik-3a39191a7"
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good"
+            ],
+            "responses": [
+                "Thank you!"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "news",
+                "latest news",
+                "india news"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you"
+            ],
+            "responses": [
+                "Personally, I find Mr. Shanto very inspiring. I might not be very fair though.."
+            ]
+        },
+        {
+            "tag": "cricket",
+            "patterns": [
+                "current cricket matches",
+                "cricket score"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "song",
+            "patterns": [
+                "top songs",
+                "best songs",
+                "hot songs",
+                " top 10 songs",
+                "top ten songs"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine","good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+        {
+            "tag": "timer",
+            "patterns": [
+                "set a timer"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "covid19",
+            "patterns": [
+                "covid 19 "
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "suggest",
+            "patterns": [
+                "you are useless","useless","suggest","suggestions","you are bad"
+            ],
+            "responses": [
+                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
+            ]
+        },
+            {"tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you","when were you made","what is your age"
+            ],
+            "responses": [
+                "As i am an Artificial Intelligence i have no age but i am in developing"
+            ]
+        },
+        {
+            "tag": "hobbies",
+            "patterns": [
+                "What are your hobbies?",
+                "Do you like reading?",
+                "What kind of music do you like?",
+                "Tell me about your interests",
+                "Do you play any games?",
+                "What do you do for fun?",
+                "Any interesting hobbies you can share?",
+                "What activities do you enjoy?",
+                "Have you tried any new hobbies recently?",
+                "Do you have any favorite pastimes?",
+                "What’s your idea of a good time?",
+                "What are some popular hobbies?",
+                "Can you suggest a hobby for me?",
+                "What do people usually do in their free time?",
+                "What are some unique hobbies?",
+                "What’s a relaxing activity you can recommend?",
+                "Tell me about your favorite activities",
+                "What’s a fun thing to do on weekends?",
+                "What hobbies do you think are trending?",
+                "Any new hobbies you’ve heard about?"
+            ],
+            "responses": [
+                "I don’t have personal hobbies, but I’m here to help you with your questions!",
+                "I don’t read books or listen to music, but I can help you find something interesting!",
+                "I don’t play games, but I can help you find some fun games to play!",
+                "I’m here to assist with whatever you need. What are your hobbies?",
+                "I’m always focused on assisting you, so I don’t have personal interests.",
+                "I can’t engage in hobbies, but I can provide information about them!",
+                "My purpose is to assist you, but I can suggest activities based on your interests.",
+                "I don’t have leisure activities, but I can suggest some popular ones.",
+                "I’m here to provide information, but I can share common hobbies people enjoy.",
+                "If you’re looking for hobby ideas, I’d suggest exploring new interests or activities.",
+                "I’m always here to help, but I can share tips on popular hobbies.",
+                "If you’re into hobbies, I can suggest exploring new and exciting activities.",
+                "I don’t partake in hobbies, but I can provide information on trending ones.",
+                "I can’t do hobbies, but I can suggest some that might interest you.",
+                "I’m focused on assisting you, but I can provide tips on various hobbies.",
+                "Let me know your interests, and I can suggest some related hobbies.",
+                "Although I don’t have hobbies, I can help you find ones that suit you.",
+                "I don’t have personal preferences, but I can offer suggestions based on popular trends.",
+                "I’m here to assist, but I can provide information on engaging hobbies."
+            ]
+        },
+        {
+            "tag": "sports",
+            "patterns": [
+                "What’s the latest sports news?",
+                "Who won the latest football match?",
+                "Tell me about the current sports events",
+                "Any updates on basketball scores?",
+                "What’s trending in sports today?",
+                "Can you give me recent sports results?",
+                "What are the latest scores in soccer?",
+                "Tell me about the most recent sports headlines",
+                "What’s the current news in baseball?",
+                "Update me on the latest tennis tournaments",
+                "Who won the latest cricket match?",
+                "What’s new in the world of sports?",
+                "Can you provide recent sports statistics?",
+                "What are the latest updates in sports?",
+                "Any interesting sports stories today?",
+                "Who are the top teams right now?",
+                "What’s the latest on sports championships?",
+                "Give me a summary of recent sports events",
+                "What’s happening in the sports world today?",
+                "Tell me about recent sports achievements"
+            ],
+            "responses": [
+                "I don’t have real-time sports updates, but tech news websites will have the latest information.",
+                "For the latest sports scores, check out sports news websites or apps.",
+                "I’m unable to provide live sports updates, but news sites will have the most recent information.",
+                "I recommend checking sports news platforms for the latest results and updates.",
+                "For up-to-date sports news, visit sports news websites or apps.",
+                "I can’t provide live scores, but you can find them on sports news sites.",
+                "Check out a sports news website for the latest updates and scores.",
+                "I don’t have access to live sports data, but news platforms will have current information.",
+                "Visit a sports news app for the latest results and news in the sports world.",
+                "For recent sports results, check out sports news sites or apps.",
+                "Sports news websites will have the latest updates and scores.",
+                "I’m not able to provide live updates, but sports apps will have the latest information.",
+                "I recommend checking sports news platforms for current scores and updates.",
+                "For the latest sports information, visit sports news websites.",
+                "I don’t have real-time updates, but sports news sites will have the latest results.",
+                "Check out sports news apps for current scores and updates.",
+                "I can’t provide live updates, but sports news platforms will have the latest information.",
+                "Visit sports news websites for the latest sports news and scores.",
+                "I’m unable to provide real-time updates, but sports news apps will have current results."
+            ]
+        },
+        {
+            "tag": "movies",
+            "patterns": [
+                "What are some good movies to watch?",
+                "Tell me about the latest movie releases",
+                "Do you have any movie recommendations?",
+                "What’s a popular movie right now?",
+                "Can you suggest a movie for the weekend?",
+                "What are the top movies this month?",
+                "What’s trending in movies?",
+                "Any new movie recommendations?",
+                "What’s a great movie to watch tonight?",
+                "Tell me about recent blockbuster hits",
+                "What movies are people talking about?",
+                "Can you recommend a classic film?",
+                "What’s a must-see movie?",
+                "What are the latest movie reviews saying?",
+                "Which movies are getting good ratings?",
+                "Any suggestions for family movies?",
+                "What are some popular movie genres?",
+                "Tell me about some recent movie releases",
+                "What’s a good movie to watch on Netflix?",
+                "Can you give me some movie ideas for date night?"
+            ],
+            "responses": [
+                "I can’t provide real-time movie recommendations, but you can check movie review sites for the latest hits.",
+                "For the latest movie releases, visit a movie streaming service or review site.",
+                "I’m unable to suggest current movies, but movie review websites can offer recommendations.",
+                "I don’t have access to current movie data, but popular movie platforms will have suggestions.",
+                "Check movie streaming services for the latest and most popular movies.",
+                "For recent movie releases, consider visiting movie review sites or streaming platforms.",
+                "I can’t provide up-to-date movie information, but movie review sites will have great suggestions.",
+                "Check out streaming services or movie review sites for the latest recommendations.",
+                "I don’t have real-time movie updates, but popular movie sites will have the latest information.",
+                "For movie ideas, try checking movie review platforms or streaming services.",
+                "I recommend visiting movie review sites for current recommendations and popular movies.",
+                "Movie streaming platforms can offer a range of suggestions for recent and popular films.",
+                "I’m unable to suggest current movies, but movie review sites will have recommendations for you.",
+                "For movie suggestions, check out popular review platforms and streaming services.",
+                "I can’t provide real-time updates, but movie review sites are great for current recommendations.",
+                "Visit movie streaming services for the latest movie releases and suggestions.",
+                "I don’t have current movie data, but review sites will have updated recommendations.",
+                "Check out movie review platforms for the latest popular and recommended movies.",
+                "I recommend exploring movie streaming services for current film suggestions."
+            ]
+        },
+        {
+            "tag": "travel",
+            "patterns": [
+                "Where should I travel next?",
+                "What are some top travel destinations?",
+                "Give me travel tips",
+                "What are some beautiful places to visit?",
+                "Tell me about popular travel spots",
+                "What’s a great city to visit?",
+                "Any recommendations for travel destinations?",
+                "What are some hidden gems to explore?",
+                "What’s the best place for a vacation?",
+                "Tell me about must-see landmarks",
+                "What are some top travel experiences?",
+                "Where can I find unique travel spots?",
+                "What’s a good destination for a weekend trip?",
+                "Can you suggest a travel itinerary?",
+                "What are the best countries to visit?",
+                "Tell me about the top tourist attractions",
+                "Where can I go for an adventure?",
+                "What’s a relaxing travel destination?",
+                "Any travel tips for first-time travelers?",
+                "What’s a great place for a cultural experience?"
+            ],
+            "responses": [
+                "I can’t provide specific travel advice, but travel websites offer great suggestions.",
+                "For travel recommendations, check out popular travel blogs and websites.",
+                "I’m not able to suggest specific destinations, but travel guides and websites can be helpful.",
+                "Consider exploring travel blogs for ideas on beautiful and interesting destinations.",
+                "I don’t have personal travel tips, but travel guides can offer plenty of recommendations.",
+                "For travel destinations, I recommend exploring popular travel websites and blogs.",
+                "Check out travel guides for unique and popular travel spots.",
+                "Travel websites can provide information on must-see landmarks and top experiences.",
+                "I recommend visiting travel forums and websites for suggestions on great vacation spots.",
+                "Travel blogs and guides can offer ideas for unique and relaxing destinations.",
+                "For vacation ideas, explore travel review sites and blogs.",
+                "Check travel websites for advice on top travel experiences and destinations.",
+                "I can’t provide travel itineraries, but travel sites and blogs can offer detailed plans.",
+                "Visit travel websites for recommendations on top countries and attractions.",
+                "Travel blogs are a great resource for finding hidden gems and unique destinations.",
+                "For cultural experiences, consider checking out travel guides and cultural blogs.",
+                "Travel forums and websites can provide tips for adventure and relaxation destinations.",
+                "Check out travel guides for advice on vacation spots and travel tips.",
+                "I recommend exploring travel websites for ideas on destinations and travel experiences.",
+                "Visit travel blogs for suggestions on cultural experiences and top travel spots."
+            ]
+        },
+        {
+            "tag": "health",
+            "patterns": [
+                "What are some healthy habits?",
+                "Give me tips on staying fit",
+                "How can I improve my diet?",
+                "Tell me about mental health tips",
+                "What’s a good workout routine?",
+                "What are the best practices for a healthy lifestyle?",
+                "How can I manage stress effectively?",
+                "Give me advice on maintaining good health",
+                "What are some nutritious foods?",
+                "How can I stay motivated to exercise?",
+                "What are some effective ways to stay fit?",
+                "Tell me about improving mental wellness",
+                "How can I develop a healthy eating plan?",
+                "What’s a good daily routine for health?",
+                "Share some tips for better sleep",
+                "How can I balance work and health?",
+                "What are some easy exercises to start with?",
+                "Give me tips on healthy living",
+                "How can I stay active throughout the day?",
+                "What’s a good strategy for weight management?"
+            ],
+            "responses": [
+                "I can’t provide personalized health advice, but reputable health websites offer great tips.",
+                "For fitness tips, consider checking out health and wellness websites.",
+                "I’m unable to provide specific diet plans, but health websites can help you with nutritious food options.",
+                "Mental health tips can be found on wellness websites and blogs.",
+                "For workout routines, visit fitness sites or consult a fitness professional.",
+                "I recommend checking health blogs and websites for healthy lifestyle practices.",
+                "Managing stress effectively often involves relaxation techniques and seeking support.",
+                "For health advice, consider consulting health professionals and reputable websites.",
+                "Nutritional information can be found on health and diet websites.",
+                "To stay motivated to exercise, set clear goals and find enjoyable activities.",
+                "For effective fitness strategies, explore fitness websites and consult professionals.",
+                "Improving mental wellness often involves stress management and self-care practices.",
+                "Developing a healthy eating plan can be supported by nutrition websites and guides.",
+                "A healthy daily routine might include regular exercise and balanced meals.",
+                "Better sleep tips can be found on wellness websites and sleep research.",
+                "Balancing work and health involves time management and self-care practices.",
+                "Starting with easy exercises and gradually increasing intensity is a good approach.",
+                "Health living tips are available on wellness websites and through health professionals.",
+                "Staying active throughout the day can include regular movement and exercise breaks.",
+                "Weight management strategies can be supported by diet and fitness resources."
+            ]
+        },
+        {
+            "tag": "technology",
+            "patterns": [
+                "What’s new in technology?",
+                "Tell me about the latest tech trends",
+                "Give me updates on recent tech innovations",
+                "What are some new gadgets?",
+                "Any tech news today?",
+                "What’s the latest in artificial intelligence?",
+                "Tell me about recent tech breakthroughs",
+                "What are the top technology advancements right now?",
+                "Any updates on new tech products?",
+                "What’s trending in the tech world?",
+                "Give me a summary of recent tech news",
+                "What are some innovative tech startups?",
+                "Tell me about new software releases",
+                "What’s new in consumer electronics?",
+                "Any recent developments in robotics?",
+                "What’s happening in the world of tech?",
+                "Can you update me on new tech trends?",
+                "What’s the latest in cybersecurity?",
+                "Tell me about new tech features and products",
+                "What are the latest advancements in tech gadgets?"
+            ],
+            "responses": [
+                "For the latest in technology, check out tech news websites and blogs.",
+                "Tech news sites and blogs offer updates on the newest trends and innovations.",
+                "I recommend visiting tech websites for recent breakthroughs and product updates.",
+                "For new gadgets and tech news, consider checking out tech review platforms.",
+                "I don’t have access to real-time tech news, but tech blogs will have the latest updates.",
+                "Artificial intelligence trends are often covered by tech news and research sites.",
+                "Tech breakthroughs can be found on technology news websites and blogs.",
+                "Visit tech news platforms for updates on top advancements and new products.",
+                "For updates on tech products, check out technology review sites and news platforms.",
+                "Tech blogs and news sites will have the latest trends and innovations in the tech world.",
+                "I can’t provide real-time updates, but tech websites offer summaries of recent news.",
+                "Explore tech startup news and innovation blogs for updates on new companies and technologies.",
+                "New software releases are often covered by tech news sites and industry blogs.",
+                "Check out consumer electronics news platforms for updates on the latest products.",
+                "For recent developments in robotics, visit tech news sites and robotics research platforms.",
+                "Tech news websites provide information on the latest happenings and advancements in technology.",
+                "For updates on tech trends, visit technology blogs and news platforms.",
+                "Cybersecurity advancements are covered by tech news sites and cybersecurity blogs.",
+                "New tech features and products are often discussed on technology review sites.",
+                "Check out technology news blogs for the latest advancements in gadgets and tech products."
+            ]
+        },
+        {
+            "tag": "history",
+            "patterns": [
+                "Tell me a historical fact",
+                "What happened today in history?",
+                "Give me some interesting historical events",
+                "Tell me about a famous historical figure",
+                "What are some significant historical milestones?",
+                "Share a fun historical trivia",
+                "What are some key historical dates?",
+                "Tell me about a major historical event",
+                "What’s an important historical discovery?",
+                "Give me details on a famous historical battle",
+                "What’s a notable historical achievement?",
+                "Tell me about historical inventions",
+                "What’s an interesting historical anecdote?",
+                "Who are some influential historical leaders?",
+                "Share a significant historical turning point",
+                "Tell me about historical landmarks",
+                "What’s an impactful historical event?",
+                "Give me information on historical revolutions",
+                "What are some historical facts about different countries?",
+                "Share a historical story from the past"
+            ],
+            "responses": [
+                "Here’s a historical fact: The Great Wall of China is over 13,000 miles long!",
+                "On this day in history, the first successful human flight took place in 1903 by the Wright brothers.",
+                "Did you know? The Pyramids of Giza have stood for over 4,500 years.",
+                "One famous historical figure is Leonardo da Vinci, known for his art and inventions during the Renaissance.",
+                "Significant milestones include the moon landing in 1969 and the fall of the Berlin Wall in 1989.",
+                "Here’s a fun fact: The first Olympic Games were held in ancient Greece in 776 BC.",
+                "The fall of Constantinople in 1453 marked the end of the Byzantine Empire.",
+                "The invention of the printing press by Johannes Gutenberg in the 15th century revolutionized the spread of knowledge.",
+                "The signing of the Magna Carta in 1215 is considered a pivotal moment in the development of constitutional law.",
+                "The discovery of America by Christopher Columbus in 1492 was a major historical event.",
+                "The Battle of Waterloo in 1815 marked the end of Napoleon Bonaparte’s rule.",
+                "The Wright brothers’ first flight in 1903 was a key milestone in aviation history.",
+                "The Industrial Revolution, starting in the late 18th century, transformed industries and societies worldwide.",
+                "The French Revolution, beginning in 1789, was a significant turning point in French and world history.",
+                "The Suez Canal, opened in 1869, was a major engineering achievement that connected the Mediterranean Sea with the Red Sea.",
+                "The Cold War era, spanning from the end of World War II to 1991, was marked by geopolitical tension between the Soviet Union and the United States.",
+                "The discovery of penicillin by Alexander Fleming in 1928 revolutionized medicine and the treatment of bacterial infections.",
+                "The fall of the Berlin Wall in 1989 symbolized the end of the Cold War and the reunification of East and West Germany.",
+                "The Apollo 11 moon landing in 1969 was a landmark event in space exploration."
+            ]
+        },
+        {
+            "tag": "fun",
+            "patterns": [
+                "Tell me a fun activity",
+                "What’s something fun to do?",
+                "Give me a fun suggestion",
+                "What’s a good way to relax?",
+                "Share an amusing idea",
+                "What’s a fun weekend activity?",
+                "Can you recommend a fun game?",
+                "What’s a good hobby to try?",
+                "Give me an idea for a fun evening",
+                "What’s a playful activity I can try?",
+                "Share a funny story",
+                "What’s a fun way to spend my free time?",
+                "Tell me about a creative activity",
+                "What’s a good way to entertain guests?",
+                "Any ideas for a fun family activity?",
+                "What’s a unique fun experience?",
+                "Give me a suggestion for a fun outing",
+                "What’s a fun project to start?",
+                "Tell me about a fun event happening soon",
+                "What’s a quirky activity I can try?"
+            ],
+            "responses": [
+                "How about trying out a new board game or outdoor activity? It’s a great way to have fun!",
+                "You could explore a new hobby, like painting or gardening, to add some fun to your routine.",
+                "Why not organize a movie night with friends or family? It’s a fun way to relax.",
+                "You might enjoy a DIY craft project or cooking a new recipe for some creative fun.",
+                "How about visiting a local museum or park for a change of scenery and some fun?",
+                "Try out a new sport or physical activity for a fun and healthy way to spend your time.",
+                "A game night with friends or family can be a great way to unwind and have fun.",
+                "How about exploring a new genre of music or taking a dance class for some lively entertainment?",
+                "You could plan a themed dinner night or a scavenger hunt for an engaging and enjoyable activity.",
+                "Consider starting a new book or podcast series for some enjoyable downtime.",
+                "Organize a small gathering with interesting activities or games for a fun and social evening.",
+                "How about trying out a new hobby like photography or knitting for some relaxing fun?",
+                "You could attend a local event or festival for a fun and exciting experience.",
+                "Try a new recipe or baking project for a tasty and enjoyable activity.",
+                "How about going on a mini-adventure, like a day trip to a nearby town or attraction?",
+                "You might enjoy a fun and challenging puzzle or brainteaser to stimulate your mind.",
+                "Consider joining a local club or group to meet new people and engage in fun activities.",
+                "How about exploring virtual reality experiences for a unique and immersive way to have fun?",
+                "Try out some creative writing or journaling for a fun and introspective activity."
+            ]
+        }
+
+    ]
+}
